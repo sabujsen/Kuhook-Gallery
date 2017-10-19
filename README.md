@@ -2,6 +2,40 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
 
+# Command:
+ng new kuhook-gallery
+npm install @angular/flex-layout --save
+npm install --save @angular/material @angular/cdk
+npm install --save @angular/animations
+npm install --save hammerjs
+npm install nanogallery2
+
+# Module:
+    import { FlexLayoutModule } from '@angular/flex-layout';
+    import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+    imports: [FlexLayoutModule],
+    imports: [BrowserAnimationsModule],
+
+    	src/main.ts
+        import 'hammerjs'; 
+
+# Theme:
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+# Links:
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+Nanogallery2
+----------------------------------
+<!-- jQuery -->
+<script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- nanogallery2 -->
+<link    href="css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+<script  type="text/javascript">src="jquery.nanogallery2.min.js"></script>
+
+------------------------------------------
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
