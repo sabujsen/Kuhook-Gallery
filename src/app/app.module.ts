@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddImageComponent } from './add-image/add-image.component';
 import { GalleryViewComponent } from './gallery-view/gallery-view.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {MatToolbarModule,MatIconModule} from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'home', component: GalleryViewComponent },
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
     path: 'gallery-view/:id',
     component: GalleryViewComponent
   },
-  { path: 'gallery-view', component: AddImageComponent },
+  { path: 'add-image', component: AddImageComponent },
   { path: 'gallery-view', component: GalleryViewComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -37,6 +38,8 @@ const appRoutes: Routes = [
     FlexLayoutModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
